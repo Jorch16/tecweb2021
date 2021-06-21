@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #E3E3E3;
+}
+form {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	padding: 10px;
+}
+form input {
+	flex: 16% 0;
+	margin-left: 3.2%;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	color: #fff;
+	display: block;
+	padding: 20px 10px;
+	cursor: pointer;
+	font-family: verdana;
+	font-weight: bold;
+	background-color: #B8B8B8;
+	margin-bottom: 20px;
+}
+.alerta {
+	margin: 0 auto;
+	width: 90%;
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #ccc;
+	position: relative;
+	display: block;
+}
+.alerta:before {
+	content: '';
+	border: 5px solid;
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: block;
+	height: 90%;
+	color: #ccc;
+}
+.alerta p {
+	font-size: 20px;
+	margin: 10px 0;
+	border-radius: 5px;
+}
+/*.mostrar {
+	display: block;
+}*/
+.letraNegritas {
+	font-weight: bold;
+}
+input[value="Azul"].activo, .divAzul {
+	background-color: #5A79D0;
+}
+.divAzul:before {
+	color: #3451b1;
+}
+input[value="Verde"].activo, .divVerde {
+	background-color: #5EE878;
+}
+.divVerde:before {
+	color: #1daf50;
+}
+input[value="Amarillo"].activo, .divAmarillo {
+	background-color: #E2EF0B;
+}
+.divAmarillo:before {
+	color: #a9b618;
+}
+input[value="Rojo"].activo, .divRojo {
+	background-color: #F71717;
+}
+.divRojo:before {
+	color: #b30303;
+}
+input[value="Gris"].activo, .divGris {
+	background-color: #979797;
+}
+.divGris:before {
+	color: #565656;
+}
